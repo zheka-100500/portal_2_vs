@@ -22,5 +22,3 @@ Added logo.
 
 * [PORTAL 2 Script Functions](https://developer.valvesoftware.com/wiki/List_of_Portal_2_Script_Functions)
 * [Squirrel](https://developer.valvesoftware.com/wiki/Squirrel)
-
-**Enjoy!**
