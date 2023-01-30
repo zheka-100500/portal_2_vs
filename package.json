@@ -2,9 +2,10 @@
   "name": "portal-2-vscripts",
   "displayName": "Portal 2 VScripts",
   "description": "Portal 2 vscripts launguage support",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "WaerWorldGames",
   "main": "./src/extension.js",
+  "icon": "logo.jpg",
   "author": {
     "name": "zheka_100500",
     "email": "zheka_100500@mail.ru"
