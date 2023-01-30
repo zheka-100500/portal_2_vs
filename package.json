@@ -1,0 +1,37 @@
+{
+  "name": "portal-2-vscripts",
+  "displayName": "Portal 2 VScripts",
+  "description": "Portal 2 vscripts launguage support",
+  "version": "0.0.1",
+  "publisher": "WaerWorldGames",
+  "main": "",
+  "author": {
+    "name": "zheka_100500",
+    "email": "zheka_100500@mail.ru"
+  },
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "nut",
+      "aliases": ["P2VSCRIPT", "nut"],
+      "extensions": [".nut"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "nut",
+      "scopeName": "source.nut",
+      "path": "./syntaxes/nut.tmLanguage.json"
+    }],
+    "snippets": [
+			{
+				"language": "nut",
+				"path": "./snippets.json"
+			}
+		]
+  }
+}

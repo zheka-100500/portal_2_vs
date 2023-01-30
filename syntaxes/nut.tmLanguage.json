@@ -1,0 +1,86 @@
+{
+	"name": "P2VSCRIPT",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#functions"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#characters"
+		},
+		{
+			"include": "#operators"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+			{
+				"name": "keyword.control.nut",
+				"match": "\\b(if|while|for|return|else)\\b"
+			}
+		]
+		},
+		"strings": {
+			"name": "string.quoted.double.nut",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.nut",
+					"match": "\\\\."
+				}
+			]
+		},
+		"functions": {
+			"patterns": [
+				{
+					"name": "entity.name.function.nut",
+					"match": "\\b(printl|AddBranchLevelName|AddCoopCreditsName|CreateProp|CreateSceneEntity|DebugDrawBox|DebugDrawLine|DoIncludeScript|EntFire|EntFireByHandle|FrameTime|GetBluePlayerIndex|GetCoopBranchLevelIndex|GetCoopSectionIndex|GetDeveloperLevel|GetHighestActiveBranch|GetMapName|GetOrangePlayerIndex|GetPlayer|GetPlayerSilenceDuration|IsLevelComplete|IsMultiplayer|IsPlayerLevelComplete|LoopSinglePlayerMaps|MarkMapComplete|PrecacheMovie|RandomFloat|RandomInt|RecordAchievementEvent|ScriptShowHudMessageAll|ScriptSteamShowURL|SendToConsole|SetDucking|ShowMessage|Time|TraceLine|UniqueString|GivePlayerPortalgun|UpgradePlayerPortalgun|UpgradePlayerPotatogun|GetAttachmentAngles|GetAttachmentOrigin|GetObjectScaleLevel|IsSequenceFinished|LookupAttachment|SetBodygroup|ConnectOutput|Destroy|DisconnectOutput|EmitSound|EyePosition|FirstMoveChild|GetAngles|GetAngularVelocity|GetBoundingMaxs|GetBoundingMins|GetCenter|GetClassname|GetForwardVector|GetHealth|GetLeftVector|GetMaxHealth|GetModelKeyValues|GetModelName|GetMoveParent|GetName|GetOrigin|GetOwner|GetPreTemplateName|GetRootMoveParent|GetScriptId|GetScriptScope|GetSoundDuration|GetTeam|GetUpVector|GetVelocity|IsValid|NextMovePeer|PrecacheSoundScript|SetAbsOrigin|SetAngles|SetAngularVelocity|SetForwardVector|SetHealth|SetMaxHealth|SetModel|SetOrigin|SetOwner|SetSize|SetTeam|SetVelocity|ValidateScriptScope|entindex|GetCurrentScene|GetSceneByIndex|IsNoclipping|CreateByClassname|FindByClassname|FindByClassnameNearest|FindByClassnameWithin|FindByModel|FindByName|FindByNameNearest|FindByNameWithin|FindByTarget|FindInSphere|First|Next|SpawnEntity|SpawnEntityAtEntityOrigin|SpawnEntityAtLocation|SpawnEntityAtNamedEntityOrigin|GetPartnerInstance|GetPartnername|GetPlayerSpeechDuration|IsPlayerSpeaking|GetWheatleyMonitorDestructionCount|IncWheatleyMonitorDestructionCount|TurnOffPotatos|TurnOnPotatos|GetPartnerInstance|GetPartnername|AddBroadcastTeamTarget|EstimateLength|FindNamedEntity|IsPaused|IsPlayingBack|LoadSceneFromString|RemoveBroadcastTeamTarget|FindKey|GetFirstSubKey|GetKeyBool|GetKeyFloat|GetKeyInt|GetKeyString|GetNextKey|IsKeyEmpty|ReleaseKeyValues|GetFov|SetFov)\\b"
+				},
+				{
+					"name": "storage.type.nut",
+					"match": "\\b(function|local)\\b"
+				}
+			]
+		},
+		"numbers":
+		{
+			"patterns": [
+				{
+					"name": "constant.numeric.nut",
+					"match": "\\b([0-9])\\b"
+				}
+			]
+		},
+		"characters":{
+			"patterns": [
+				{
+					"name": "constant.character.nut",
+					"match": "\\b([a-z]|[A-Z])\\b"
+				},
+				{
+					"name": "constant.language.nut",
+					"match": "\\b(null|true|false|self|this)\\b"
+				}
+			]
+		},
+		"operators" :{
+			"patterns": [
+				{
+					"name": "keyword.operator.nut",
+					"match": "%=|\\+=|-=|\\*=|==|\\+\\+|--|<|>|!=|=|\\+|\\-"
+				}
+			]
+		}
+	},
+	"scopeName": "source.nut"
+}

@@ -1,0 +1,682 @@
+{
+    "EntFire": {
+        "prefix": "EntFire()",
+        "body": "EntFire(target, action, value, delay)",
+        "description": "Generate and entity i/o event"
+    },
+    "AddBranchLevelName": {
+        "prefix": "AddBranchLevelName()",
+        "body": "AddBranchLevelName(int, string)",
+        "description": "Adds a level to the specified branche's list."
+    },
+    "AddCoopCreditsName": {
+        "prefix": "AddCoopCreditsName()",
+        "body": "AddCoopCreditsName(string)",
+        "description": "Adds a name to the coop credit's list."
+    },
+    "CreateProp": {
+        "prefix": "CreateProp()",
+        "body": "CreateProp(string, Vector, string, int)",
+        "description": "Create a physics prop."
+    },
+    "CreateSceneEntity": {
+        "prefix": "CreateSceneEntity()",
+        "body": "CreateSceneEntity(string)",
+        "description": "Create a scene entity to play the specified scene."
+    },
+    "DebugDrawBox": {
+        "prefix": "DebugDrawBox()",
+        "body": "DebugDrawBox(Vector, Vector, Vector, int, int, int, int, float)",
+        "description": "Draw a debug overlay box."
+    },
+    "DebugDrawLine": {
+        "prefix": "DebugDrawLine()",
+        "body": "DebugDrawLine(Vector, Vector, int, int, int, bool, float)",
+        "description": "Draw a debug overlay Line."
+    },
+    "DoIncludeScript": {
+        "prefix": "DoIncludeScript()",
+        "body": "DoIncludeScript(string, handle)",
+        "description": "Execute a script (internal)."
+    },
+    "EntFireByHandle": {
+        "prefix": "EntFireByHandle()",
+        "body": "EntFireByHandle(handle, string, string, float, handle, handle)",
+        "description": "Generate and entity i/o event. First parameter is an entity instance."
+    },
+    "FrameTime": {
+        "prefix": "EntFireByHandle()",
+        "body": "FrameTime()",
+        "description": "Get the time spent on the server in the last frame."
+    },
+    "GetBluePlayerIndex": {
+        "prefix": "GetBluePlayerIndex()",
+        "body": "GetBluePlayerIndex()",
+        "description": "Player index of the blue player."
+    },
+    "GetCoopBranchLevelIndex": {
+        "prefix": "GetCoopBranchLevelIndex()",
+        "body": "GetCoopBranchLevelIndex(int)",
+        "description": "Given the 'branch' argument, returns the current chosen level."
+    },
+    "GetCoopSectionIndex": {
+        "prefix": "GetCoopSectionIndex()",
+        "body": "GetCoopSectionIndex()",
+        "description": "Section that the coop players have selected to load."
+    },
+    "GetDeveloperLevel": {
+        "prefix": "GetDeveloperLevel()",
+        "body": "GetDeveloperLevel()",
+        "description": "Gets the level of 'develoer'."
+    },
+    "GetHighestActiveBranch": {
+        "prefix": "GetHighestActiveBranch()",
+        "body": "GetHighestActiveBranch()",
+        "description": "Returns which branches should be available in the hub."
+    },
+    "GetMapName": {
+        "prefix": "GetMapName()",
+        "body": "GetMapName()",
+        "description": "Get the name of the map."
+    },
+    "GetOrangePlayerIndex": {
+        "prefix": "GetOrangePlayerIndex()",
+        "body": "GetOrangePlayerIndex()",
+        "description": "Player index of the orange player."
+    },
+    "GetPlayer": {
+        "prefix": "GetPlayer()",
+        "body": "GetPlayer()",
+        "description": "Returns the player (SP Only)."
+    },
+    "GetPlayerSilenceDuration": {
+        "prefix": "GetPlayerSilenceDuration()",
+        "body": "GetPlayerSilenceDuration(int)",
+        "description": "Time that the specified player has been silent on the mic."
+    },
+    "IsLevelComplete": {
+        "prefix": "IsLevelComplete()",
+        "body": "IsLevelComplete(int, int)",
+        "description": "Returns true if the level in the specified branch is completed by either player."
+    },
+    "IsMultiplayer": {
+        "prefix": "IsMultiplayer()",
+        "body": "IsMultiplayer()",
+        "description": "Is this a multiplayer game?"
+    },
+    "IsPlayerLevelComplete": {
+        "prefix": "IsPlayerLevelComplete()",
+        "body": "IsPlayerLevelComplete(int, int, int)",
+        "description": "Returns true if the level in the specified branch is completed by a specific player."
+    },
+    "LoopSinglePlayerMaps": {
+        "prefix": "LoopSinglePlayerMaps()",
+        "body": "LoopSinglePlayerMaps()",
+        "description": "Run the single player maps in a continuous loop."
+    },
+    "MarkMapComplete": {
+        "prefix": "MarkMapComplete()",
+        "body": "MarkMapComplete(string)",
+        "description": "Marks a maps a complete for both players."
+    },
+    "PrecacheMovie": {
+        "prefix": "PrecacheMovie()",
+        "body": "PrecacheMovie(string)",
+        "description": "Precaches a named movie. Only valid to call within the entity's 'Precache' function called on mapspawn."
+    },
+    "RandomFloat": {
+        "prefix": "RandomFloat()",
+        "body": "RandomFloat(min, max)",
+        "description": "Generate a random floating point number within a range, inclusive."
+    },
+    "RandomInt": {
+        "prefix": "RandomInt()",
+        "body": "RandomInt(min, max)",
+        "description": "Generate a random integer within a range, inclusive."
+    },
+    "RecordAchievementEvent": {
+        "prefix": "RecordAchievementEvent()",
+        "body": "RecordAchievementEvent(string, int)",
+        "description": "Records achievement event or progress."
+    },
+    "ScriptShowHudMessageAll": {
+        "prefix": "ScriptShowHudMessageAll()",
+        "body": "ScriptShowHudMessageAll(string, float)",
+        "description": "Show center print text message."
+    },
+    "ScriptSteamShowURL": {
+        "prefix": "ScriptSteamShowURL()",
+        "body": "ScriptSteamShowURL(string)",
+        "description": "Bring up the steam overlay and shows the specified URL. (Full address with protocol type is required, e.g. http://www.steamgames.com/)."
+    },
+    "SendToConsole": {
+        "prefix": "SendToConsole()",
+        "body": "SendToConsole(string)",
+        "description": "Send a string to the console as a command."
+    },
+    "SetDucking": {
+        "prefix": "SetDucking()",
+        "body": "SetDucking(string, string, float)",
+        "description": "Set the level of an audio ducking channel."
+    },
+    "ShowMessage": {
+        "prefix": "ShowMessage()",
+        "body": "ShowMessage(string)",
+        "description": "Print a hud message on all clients."
+    },
+    "TraceLine": {
+        "prefix": "TraceLine()",
+        "body": "TraceLine(Vector, Vector, handle)",
+        "description": "given 2 points & ent to ignore, return fraction along line that hits world or models."
+    },
+    "UniqueString": {
+        "prefix": "UniqueString()",
+        "body": "UniqueString(string)",
+        "description": "Generate a string guaranteed to be unique across the life of the script VM, with an optional root string. Useful for adding data to tables when not sure what keys are already in use in that table."
+    },
+    "GivePlayerPortalgun": {
+        "prefix": "GivePlayerPortalgun()",
+        "body": "GivePlayerPortalgun()",
+        "description": "Equips the player with a blue-only portalgun."
+    },
+    "UpgradePlayerPortalgun": {
+        "prefix": "UpgradePlayerPortalgun()",
+        "body": "UpgradePlayerPortalgun()",
+        "description": "Upgrades the player's portalgun to shoot orange portals."
+    },
+    "UpgradePlayerPotatogun": {
+        "prefix": "UpgradePlayerPotatogun()",
+        "body": "UpgradePlayerPotatogun()",
+        "description": "Upgrades the player's portalgun to shoot orange portals and have PotatOS impaled on it."
+    },
+    "printl": {
+        "prefix": "printl()",
+        "body": "printl(object);",
+        "description": "Print object to game console."
+    },
+    "GetAttachmentAngles": {
+        "prefix": "GetAttachmentAngles()",
+        "body": "GetAttachmentAngles(int)",
+        "description": "Get the attachement id's angles as a p,y,r vector."
+    },
+    "GetAttachmentOrigin": {
+        "prefix": "GetAttachmentOrigin()",
+        "body": "GetAttachmentOrigin(int)",
+        "description": "Get the attachement id's origin vector."
+    },
+    "GetObjectScaleLevel": {
+        "prefix": "GetObjectScaleLevel()",
+        "body": "GetObjectScaleLevel()",
+        "description": "The scale size of the entity."
+    },
+    "IsSequenceFinished": {
+        "prefix": "IsSequenceFinished()",
+        "body": "IsSequenceFinished()",
+        "description": "Ask whether the main sequence is done playing."
+    },
+    "LookupAttachment": {
+        "prefix": "LookupAttachment()",
+        "body": "LookupAttachment(string)",
+        "description": "Get the named attachement id."
+    },
+    "SetBodygroup": {
+        "prefix": "SetBodygroup()",
+        "body": "SetBodygroup(int, int)",
+        "description": "Sets a bodygroup."
+    },
+    "ConnectOutput": {
+        "prefix": "ConnectOutput()",
+        "body": "ConnectOutput(connection_name, function_name)",
+        "description": "Adds an I/O connection that will call the named function when the specified output fires."
+    },
+    "Destroy": {
+        "prefix": "Destroy()",
+        "body": "Destroy()",
+        "description": "Destroy entity."
+    },
+    "DisconnectOutput": {
+        "prefix": "DisconnectOutput()",
+        "body": "DisconnectOutput(connection_name, function_name)",
+        "description": "Removes a connected script function from an I/O event."
+    },
+    "EmitSound": {
+        "prefix": "EmitSound()",
+        "body": "EmitSound(string)",
+        "description": "Plays a sound from this entity."
+    },
+    "EyePosition": {
+        "prefix": "EyePosition()",
+        "body": "EyePosition()",
+        "description": "Get vector to eye position - absolute coords."
+    },
+    "FirstMoveChild": {
+        "prefix": "FirstMoveChild()",
+        "body": "FirstMoveChild()",
+        "description": "?"
+    },
+    "GetAngles": {
+        "prefix": "GetAngles()",
+        "body": "GetAngles()",
+        "description": "Get entity pitch, yaw, roll as a vector."
+    },
+    "GetAngularVelocity": {
+        "prefix": "GetAngularVelocity()",
+        "body": "GetAngularVelocity()",
+        "description": "Get the local angular velocity - returns a vector of pitch,yaw,roll."
+    },
+    "GetBoundingMaxs": {
+        "prefix": "GetBoundingMaxs()",
+        "body": "GetBoundingMaxs()",
+        "description": "Get a vector containing max bounds, centered on object."
+    },
+    "GetBoundingMins": {
+        "prefix": "GetBoundingMins()",
+        "body": "GetBoundingMins()",
+        "description": "Get a vector containing min bounds, centered on object."
+    },
+    "GetCenter": {
+        "prefix": "GetCenter()",
+        "body": "GetCenter()",
+        "description": "Get vector to center of object - absolute coords."
+    },
+    "GetClassname": {
+        "prefix": "GetClassname()",
+        "body": "GetClassname()",
+        "description": "?"
+    },
+    "GetForwardVector": {
+        "prefix": "GetForwardVector()",
+        "body": "GetForwardVector()",
+        "description": "Get the forward vector of the entity."
+    },
+    "GetHealth": {
+        "prefix": "GetHealth()",
+        "body": "GetHealth()",
+        "description": "Return health of the entity."
+    },
+    "GetLeftVector": {
+        "prefix": "GetLeftVector()",
+        "body": "GetLeftVector()",
+        "description": "Get the left vector of the entity."
+    },
+    "GetMaxHealth": {
+        "prefix": "GetMaxHealth()",
+        "body": "GetMaxHealth()",
+        "description": "Return max health of the entity."
+    },
+    "GetModelKeyValues": {
+        "prefix": "GetModelKeyValues()",
+        "body": "GetModelKeyValues()",
+        "description": "Get a KeyValue class instance on this entity's model."
+    },
+    "GetModelName": {
+        "prefix": "GetModelName()",
+        "body": "GetModelName()",
+        "description": "Returns the name of the model."
+    },
+    "GetMoveParent": {
+        "prefix": "GetMoveParent()",
+        "body": "GetMoveParent()",
+        "description": "If in hierarchy, retrieves the entity's parent."
+    },
+    "GetName": {
+        "prefix": "GetName()",
+        "body": "GetName()",
+        "description": "Get entity name."
+    },
+    "GetOrigin": {
+        "prefix": "GetOrigin()",
+        "body": "GetOrigin()",
+        "description": "Get entity origin."
+    },
+    "GetOwner": {
+        "prefix": "GetOwner()",
+        "body": "GetOwner()",
+        "description": "Gets this entity's owner."
+    },
+    "GetPreTemplateName": {
+        "prefix": "GetPreTemplateName()",
+        "body": "GetPreTemplateName()",
+        "description": "Get the entity name stripped of template unique decoration."
+    },
+    "GetRootMoveParent": {
+        "prefix": "GetRootMoveParent()",
+        "body": "GetRootMoveParent()",
+        "description": "If in hierarchy, walks up the hierarchy to find the root parent."
+    },
+    "GetScriptId": {
+        "prefix": "GetScriptId()",
+        "body": "GetScriptId()",
+        "description": "Retrieve the unique identifier used to refer to the entity within the scripting system."
+    },
+    "GetScriptScope": {
+        "prefix": "GetScriptScope()",
+        "body": "GetScriptScope()",
+        "description": "Retrieve the script-side data associated with an entity."
+    },
+    "GetSoundDuration": {
+        "prefix": "GetSoundDuration()",
+        "body": "GetSoundDuration(soundname, actormodelname_optional)",
+        "description": "Returns float duration of the sound. Takes soundname and optional actormodelname."
+    },
+    "GetTeam": {
+        "prefix": "GetTeam()",
+        "body": "GetTeam()",
+        "description": "Get entity team id."
+    },
+    "GetUpVector": {
+        "prefix": "GetUpVector()",
+        "body": "GetUpVector()",
+        "description": "Get the up vector of the entity."
+    },
+    "GetVelocity": {
+        "prefix": "GetVelocity()",
+        "body": "GetVelocity()",
+        "description": "?"
+    },
+    "IsValid": {
+        "prefix": "IsValid()",
+        "body": "IsValid()",
+        "description": "Returns true if entity is valid."
+    },
+    "NextMovePeer": {
+        "prefix": "NextMovePeer()",
+        "body": "NextMovePeer()",
+        "description": "?"
+    },
+    "PrecacheSoundScript": {
+        "prefix": "PrecacheSoundScript()",
+        "body": "PrecacheSoundScript(string)",
+        "description": "Precache a sound for later playing."
+    },
+    "SetAbsOrigin": {
+        "prefix": "SetAbsOrigin()",
+        "body": "SetAbsOrigin(Vector)",
+        "description": "SetAbsOrigin."
+    },
+    "SetAngles": {
+        "prefix": "SetAngles()",
+        "body": "SetAngles(float, float, float)",
+        "description": "Set entity pitch, yaw, roll."
+    },
+    "SetAngularVelocity": {
+        "prefix": "SetAngularVelocity()",
+        "body": "SetAngularVelocity(float, float, float)",
+        "description": "Set the local angular velocity - takes float pitch,yaw,roll velocities."
+    },
+    "SetForwardVector": {
+        "prefix": "SetForwardVector()",
+        "body": "SetForwardVector(Vector)",
+        "description": "Set the orientation of the entity to have this forward vector."
+    },
+    "SetHealth": {
+        "prefix": "SetHealth()",
+        "body": "SetHealth(int)",
+        "description": "Set entity health."
+    },
+    "SetMaxHealth": {
+        "prefix": "SetMaxHealth()",
+        "body": "SetMaxHealth(int)",
+        "description": "Set entity max health."
+    },
+    "SetModel": {
+        "prefix": "SetModel()",
+        "body": "SetModel(string)",
+        "description": "Set entity model."
+    },
+    "SetOrigin": {
+        "prefix": "SetOrigin()",
+        "body": "SetOrigin(Vector)",
+        "description": "Set entity origin."
+    },
+    "SetOwner": {
+        "prefix": "SetOwner()",
+        "body": "SetOwner(handle)",
+        "description": "Set entity owner."
+    },
+    "SetSize": {
+        "prefix": "SetSize()",
+        "body": "SetSize(Vector, Vector)",
+        "description": "Set entity size."
+    },
+    "SetTeam": {
+        "prefix": "SetTeam()",
+        "body": "SetTeam(int)",
+        "description": "Set entity team id."
+    },
+    "SetVelocity": {
+        "prefix": "SetVelocity()",
+        "body": "SetVelocity(Vector)",
+        "description": "Set entity velocity."
+    },
+    "ValidateScriptScope": {
+        "prefix": "ValidateScriptScope()",
+        "body": "ValidateScriptScope()",
+        "description": "Ensure that an entity's script scope has been created."
+    },
+    "entindex": {
+        "prefix": "entindex()",
+        "body": "entindex()",
+        "description": "?"
+    },
+    "GetCurrentScene": {
+        "prefix": "GetCurrentScene()",
+        "body": "GetCurrentScene()",
+        "description": "Returns the instance of the oldest active scene entity (if any)."
+    },
+    "GetSceneByIndex": {
+        "prefix": "GetSceneByIndex()",
+        "body": "GetSceneByIndex(int)",
+        "description": "Returns the instance of the scene entity at the specified index."
+    },
+    "IsNoclipping": {
+        "prefix": "IsNoclipping()",
+        "body": "IsNoclipping()",
+        "description": "Returns true if the player is in noclip mode."
+    },
+    "CreateByClassname": {
+        "prefix": "CreateByClassname()",
+        "body": "CreateByClassname(string)",
+        "description": "Creates an entity by classname."
+    },
+    "FindByClassname": {
+        "prefix": "FindByClassname()",
+        "body": "FindByClassname(handle, string)",
+        "description": "Find entities by class name. Pass 'null' to start an iteration, or reference to a previously found entity to continue a search."
+    },
+    "FindByClassnameNearest": {
+        "prefix": "FindByClassnameNearest()",
+        "body": "FindByClassnameNearest(string, Vector, float)",
+        "description": "Find entities by class name nearest to a point."
+    },
+    "FindByClassnameWithin": {
+        "prefix": "FindByClassnameWithin()",
+        "body": "FindByClassnameWithin(handle, string, Vector, float)",
+        "description": "Find entities by class name within a radius. Pass 'null' to start an iteration, or reference to a previously found entity to continue a search."
+    },
+    "FindByModel": {
+        "prefix": "FindByModel()",
+        "body": "FindByModel(handle, string)",
+        "description": "Find entities by model name. Pass 'null' to start an iteration, or reference to a previously found entity to continue a search."
+    },
+    "FindByName": {
+        "prefix": "FindByName()",
+        "body": "FindByName(handle, string)",
+        "description": "Find entities by name. Pass 'null' to start an iteration, or reference to a previously found entity to continue a search."
+    },
+    "FindByNameNearest": {
+        "prefix": "FindByNameNearest()",
+        "body": "FindByNameNearest(string, Vector, float)",
+        "description": "Find entities by name nearest to a point."
+    },
+    "FindByNameWithin": {
+        "prefix": "FindByNameWithin()",
+        "body": "FindByNameWithin(handle, string, Vector, float)",
+        "description": "Find entities by name within a radius. Pass 'null' to start an iteration, or reference to a previously found entity to continue a search."
+    },
+    "FindByTarget": {
+        "prefix": "FindByTarget()",
+        "body": "FindByTarget(handle, string)",
+        "description": "Find entities by targetname. Pass 'null' to start an iteration, or reference to a previously found entity to continue a search."
+    },
+    "FindInSphere": {
+        "prefix": "FindInSphere()",
+        "body": "FindInSphere(handle, Vector, float)",
+        "description": "Find entities within a radius. Pass 'null' to start an iteration, or reference to a previously found entity to continue a search."
+    },
+    "First": {
+        "prefix": "First()",
+        "body": "First()",
+        "description": "Begin an iteration over the list of entities."
+    },
+    "Next": {
+        "prefix": "Next()",
+        "body": "Next(handle)",
+        "description": "Continue an iteration over the list of entities, providing reference to a previously found entity."
+    },
+    "SpawnEntity": {
+        "prefix": "SpawnEntity()",
+        "body": "SpawnEntity()",
+        "description": "Create an entity at the location of the maker."
+    },
+    "SpawnEntityAtEntityOrigin": {
+        "prefix": "SpawnEntityAtEntityOrigin()",
+        "body": "SpawnEntityAtEntityOrigin(handle)",
+        "description": "Create an entity at the location of a specified entity instance."
+    },
+    "SpawnEntityAtLocation": {
+        "prefix": "SpawnEntityAtLocation()",
+        "body": "SpawnEntityAtLocation(Vector, Vector)",
+        "description": "Create an entity at a specified location and orientaton, orientation is Euler angle in degrees (pitch, yaw, roll)."
+    },
+    "SpawnEntityAtNamedEntityOrigin": {
+        "prefix": "SpawnEntityAtNamedEntityOrigin()",
+        "body": "SpawnEntityAtNamedEntityOrigin(string)",
+        "description": "Create an entity at the location of a named entity."
+    },
+    "GetPartnerInstance": {
+        "prefix": "GetPartnerInstance()",
+        "body": "GetPartnerInstance()",
+        "description": "Get the instance handle of the door's linked partner."
+    },
+    "GetPartnername": {
+        "prefix": "GetPartnername()",
+        "body": "GetPartnername()",
+        "description": "Returns the partnername of the door."
+    },
+    "GetPlayerSpeechDuration": {
+        "prefix": "GetPlayerSpeechDuration()",
+        "body": "GetPlayerSpeechDuration(int)",
+        "description": "Returns the number of seconds the player has been continuously speaking."
+    },
+    "IsPlayerSpeaking": {
+        "prefix": "IsPlayerSpeaking()",
+        "body": "IsPlayerSpeaking(int)",
+        "description": "Returns whether the player specified is speaking."
+    },
+    "GetWheatleyMonitorDestructionCount": {
+        "prefix": "GetWheatleyMonitorDestructionCount()",
+        "body": "GetWheatleyMonitorDestructionCount()",
+        "description": "Get number of wheatley monitors destroyed by the player."
+    },
+    "IncWheatleyMonitorDestructionCount": {
+        "prefix": "IncWheatleyMonitorDestructionCount()",
+        "body": "IncWheatleyMonitorDestructionCount()",
+        "description": "Set number of wheatley monitors destroyed by the player."
+    },
+    "TurnOnPotatos": {
+        "prefix": "TurnOnPotatos()",
+        "body": "TurnOnPotatos()",
+        "description": "Turns On the Potatos material light."
+    },
+    "AddBroadcastTeamTarget": {
+        "prefix": "AddBroadcastTeamTarget()",
+        "body": "AddBroadcastTeamTarget(int)",
+        "description": "Adds a team (by index) to the broadcast list."
+    },
+    "EstimateLength": {
+        "prefix": "EstimateLength()",
+        "body": "EstimateLength()",
+        "description": "Returns length of this scene in seconds."
+    },
+    "FindNamedEntity": {
+        "prefix": "FindNamedEntity()",
+        "body": "FindNamedEntity(string)",
+        "description": "given an entity reference, such as !target, get actual entity from scene object."
+    },
+    "IsPaused": {
+        "prefix": "IsPaused()",
+        "body": "IsPaused()",
+        "description": "If this scene is currently paused."
+    },
+    "IsPlayingBack": {
+        "prefix": "IsPlayingBack()",
+        "body": "IsPlayingBack()",
+        "description": "If this scene is currently playing."
+    },
+    "LoadSceneFromString": {
+        "prefix": "LoadSceneFromString()",
+        "body": "LoadSceneFromString(string, string)",
+        "description": "given a dummy scene name and a vcd string, load the scene."
+    },
+    "RemoveBroadcastTeamTarget": {
+        "prefix": "RemoveBroadcastTeamTarget()",
+        "body": "RemoveBroadcastTeamTarget(int)",
+        "description": "Removes a team (by index) from the broadcast list."
+    },
+    "FindKey": {
+        "prefix": "FindKey()",
+        "body": "FindKey(string)",
+        "description": "Given a KeyValues object and a key name, find a KeyValues object associated with the key name."
+    },
+    "GetFirstSubKey": {
+        "prefix": "GetFirstSubKey()",
+        "body": "GetFirstSubKey()",
+        "description": "Given a KeyValues object, return the first sub key object."
+    },
+    "GetKeyBool": {
+        "prefix": "GetKeyBool()",
+        "body": "GetKeyBool(string)",
+        "description": "Given a KeyValues object and a key name, return associated bool value."
+    },
+    "GetKeyFloat": {
+        "prefix": "GetKeyFloat()",
+        "body": "GetKeyFloat(string)",
+        "description": "Given a KeyValues object and a key name, return associated float value."
+    },
+    "GetKeyInt": {
+        "prefix": "GetKeyInt()",
+        "body": "GetKeyInt(string)",
+        "description": "Given a KeyValues object and a key name, return associated integer value."
+    },
+    "GetKeyString": {
+        "prefix": "GetKeyString()",
+        "body": "GetKeyString(string)",
+        "description": "Given a KeyValues object and a key name, return associated string value."
+    },
+    "GetNextKey": {
+        "prefix": "GetNextKey()",
+        "body": "GetNextKey()",
+        "description": "Given a KeyValues object, return the next key object in a sub key group."
+    },
+    "IsKeyEmpty": {
+        "prefix": "IsKeyEmpty()",
+        "body": "IsKeyEmpty(string)",
+        "description": "Given a KeyValues object and a key name, return true if key name has no value."
+    },
+    "ReleaseKeyValues": {
+        "prefix": "ReleaseKeyValues()",
+        "body": "ReleaseKeyValues()",
+        "description": "Given a root KeyValues object, release its contents."
+    },
+    "GetFov": {
+        "prefix": "GetFov()",
+        "body": "GetFov()",
+        "description": "get camera's current fov setting as integer."
+    },
+    "SetFov": {
+        "prefix": "SetFov()",
+        "body": "SetFov(int, float)",
+        "description": "set camera's current fov in integer degrees and fov change rate as float."
+    }
+}
