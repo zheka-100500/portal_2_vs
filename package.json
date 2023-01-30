@@ -4,7 +4,7 @@
   "description": "Portal 2 vscripts launguage support",
   "version": "0.0.1",
   "publisher": "WaerWorldGames",
-  "main": "",
+  "main": "./src/extension.js",
   "author": {
     "name": "zheka_100500",
     "email": "zheka_100500@mail.ru"
@@ -15,6 +15,10 @@
   "categories": [
     "Programming Languages"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zheka-100500/portal_2_vs"
+  },
   "contributes": {
     "languages": [{
       "id": "nut",
